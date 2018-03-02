@@ -1,0 +1,23 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: palm
+  name: palm
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: palm
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: palm
+        version: v1
+    spec:
+      containers:
+      - image: gcr.io/hightowerlabs/palm:809d26933aefca9284688f56b3c13e81246e31f9
+        name: palm
+        ports:
+        - containerPort: 80
