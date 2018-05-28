@@ -17,7 +17,7 @@ spec:
         version: v1
     spec:
       containers:
-      - image: gcr.io/github-webhook-196021/palm:29e7ea3ea7c83be2feebc80a04bbc1b92a7f0561
+      - image: gcr.io/github-webhook-196021/palm:ebf7e4f0eb38fa68fe341ab9c05b46f5d0709d9a
         name: palm
         ports:
         - containerPort: 80
